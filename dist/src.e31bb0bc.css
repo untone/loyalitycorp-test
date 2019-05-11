@@ -1,0 +1,241 @@
+form[data-v-031696] {
+  margin: 0 auto;
+  width: 500px;
+}
+input[data-v-031696] {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: #a9a9a9;
+  background-color: #fff;
+  border: 1px solid #24292e;
+  border-radius: 2px;
+  outline: none;
+  transition: color .15s, border-color .15s;
+}
+input[data-v-031696]:hover,
+input[data-v-031696]:focus {
+  border-color: #0080ff;
+}
+input[data-v-031696]:focus {
+  color: #24292e;
+}
+header[data-v-031696] {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 90px;
+  margin: 0 auto;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #24292e;
+}
+header a[data-v-031696] {
+  color: #fff;
+  text-decoration: none;
+}
+ol[data-v-5d8840] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ol li[data-v-5d8840] {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+ol li[data-v-5d8840]:last-child {
+  border-bottom: none;
+}
+ol li a[data-v-5d8840] {
+  display: flex;
+  align-items: center;
+  color: #24292e;
+  text-decoration: none;
+}
+ol li h2[data-v-5d8840] {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #24292e;
+  transition: color 0.15s;
+}
+ol li a:hover h2[data-v-5d8840],
+ol li a:focus h2[data-v-5d8840] {
+  color: #0080ff;
+}
+ol li img[data-v-5d8840] {
+  margin: 0 20px 0 0;
+  width: 48px;
+  height: 48px;
+}
+ul[data-v-5d8840] {
+  margin: 0;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+ul li a[data-v-5d8840] {
+  display: block;
+  padding: 10px;
+  transition: color 0.15s;
+  outline: none;
+}
+ul li a[data-v-5d8840]:hover {
+  color: #0080ff;
+}
+ul li[class="disabled"] a[data-v-5d8840],
+ul li[class="active"] a[data-v-5d8840] {
+  color: #a9a9a9 !important;
+  cursor: default;
+}
+article[data-v-9eba3a] {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside[data-v-9eba3a] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.15);
+}
+section[data-v-9eba3a] {
+  position: absolute;
+  top: 20px;
+  right: auto;
+  bottom: 20px;
+  left: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 500px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
+header[data-v-9eba3a] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+button[data-v-9eba3a] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+button[data-v-9eba3a]:hover,
+button[data-v-9eba3a]:focus {
+  color: #0080ff;
+}
+h2[data-v-9eba3a] {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+div[data-v-9eba3a] {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 12px;
+  line-height: 18px;
+  color: #24292e;
+}
+div a[data-v-9eba3a] {
+  color: #0080ff;
+  text-decoration: none;
+}
+ol[data-v-c573de] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ol li[data-v-c573de] {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+ol li[data-v-c573de]:last-child {
+  border-bottom: none;
+}
+ol li a[data-v-c573de] {
+  color: #24292e;
+  text-decoration: none;
+}
+ol li h2[data-v-c573de] {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #24292e;
+  transition: color 0.15s;
+}
+ol li a:hover h2[data-v-c573de],
+ol li a:focus h2[data-v-c573de] {
+  color: #0080ff;
+}
+ol li img[data-v-c573de] {
+  margin: 0 20px 0 0;
+  width: 48px;
+  height: 48px;
+}
+dl[data-v-c573de] {
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  font-size: 11px;
+}
+dl dt[data-v-c573de] {
+  margin: 0 5px 0 0;
+  padding: 0;
+  color: #707070;
+}
+dl dd[data-v-c573de] {
+  margin: 0 10px 0 0;
+  padding: 0;
+}

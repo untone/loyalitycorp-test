@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loyalitycorp test</title>
+    <style type="text/css" media="screen">
+      html,
+      body,
+      input
+      button,
+      select,
+      textarea {
+        font-family: -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          'Roboto',
+          'Oxygen',
+          'Ubuntu',
+          'Cantarell',
+          'Fira Sans',
+          'Droid Sans',
+          'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      main {
+        margin: 0 auto;
+        padding: 120px 0;
+        width: 500px;
+      }
+      small {
+        display: flex;
+        font-size: 13px;
+        justify-content: space-between;
+        color: #707070;
+      }
+      small aside {
+        display: flex;
+      }
+      small aside select {
+        margin: 0 15px 0 5px;
+      }
+      small aside select:last-of-type {
+        margin-right: 0;
+      }
+      ol + ul {
+        margin: 0;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        }
+      ol + ul li a {
+        display: block;
+        padding: 10px;
+        transition: color 0.15s;
+        outline: none;
+      }
+      ol + ul li a:hover {
+        color: #0080ff;
+      }
+      ol + ul li[class="disabled"] a,
+      ol + ul li[class="active"] a {
+        color: #a9a9a9 !important;
+        cursor: default;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

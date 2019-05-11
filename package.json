@@ -1,0 +1,30 @@
+{
+  "name": "loyalitycorp-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "NODE_ENV=production ./node_modules/parcel-bundler/bin/cli.js build src/index.html --public-url ./",
+    "serve": "NODE_ENV=production ./node_modules/parcel-bundler/bin/cli.js serve src/index.html",
+    "dev": "NODE_ENV=development ./node_modules/parcel-bundler/bin/cli.js src/index.html"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "parcel-bundler": "^1.12.3",
+    "parse-link-header": "^1.0.1",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-markdown": "^2.2.4",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.0.6",
+    "vue-spinner": "^1.0.3",
+    "vuejs-paginate": "^2.1.0",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.0",
+    "postcss-modules": "^1.4.1",
+    "stylus": "^0.54.5",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
