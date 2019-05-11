@@ -53673,16 +53673,16 @@ module.exports = {
                 _vm.getTotal
                   ? _c("small", [
                       _vm._v(
-                        "\n      Found " +
+                        "\n        Found " +
                           _vm._s(
                             _vm.total === 1000 ? "more than 1000" : _vm.total
                           ) +
                           " result" +
                           _vm._s(_vm.total > 1 ? "s" : "") +
-                          "\n    "
+                          "\n      "
                       )
                     ])
-                  : _c("small", [_vm._v("\n      No users found\n    ")]),
+                  : _c("small", [_vm._v("\n        No users found\n      ")]),
                 _vm._v(" "),
                 _c(
                   "ol",
@@ -53844,7 +53844,7 @@ module.exports = {
   computed: _objectSpread({}, mapGetters(['getItem']), mapState(['item'])),
   created: function created() {
     var _this$$route$params = this.$route.params,
-        username = _this$$route$params.username,
+        username = _this$$route$params.ownername,
         reponame = _this$$route$params.reponame;
     this.fetchRepo({
       username: username,
@@ -54111,7 +54111,13 @@ module.exports = {
                         {
                           attrs: {
                             to: {
-                              path: "/" + item.owner.login + "/" + item.name
+                              path:
+                                "/" +
+                                _vm.username +
+                                "/" +
+                                item.owner.login +
+                                "/" +
+                                item.name
                             }
                           }
                         },
@@ -54282,14 +54288,14 @@ var routes = [{
     }
   }, {
     name: 'RepoItem',
-    path: ':reponame',
+    path: ':ownername/:reponame',
     components: {
       list: _list2.default,
       modal: _repo.default
     },
     props: function props(route) {
       return {
-        username: route.params.username
+        ownername: route.params.username
       };
     },
     meta: {
@@ -54872,7 +54878,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64454" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58155" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

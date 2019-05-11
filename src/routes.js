@@ -48,13 +48,13 @@ const routes = [
       },
       {
         name: 'RepoItem',
-        path: ':reponame',
+        path: ':ownername/:reponame',
         components: {
           list: ReposList,
           modal: RepoItem,
         },
         props: (route) => ({
-          username: route.params.username
+          ownername: route.params.username
         }),
         meta: {
          showModal: true

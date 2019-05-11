@@ -3,30 +3,31 @@
     <UsersSearch :username="username"></UsersSearch>
     <main>
       <div v-if="getLoaded">
-      <small v-if="getTotal">
-        Found {{ total === 1000 ? 'more than 1000' : total }} result{{ total > 1 ? 's' : ''}}
-      </small>
-      <small v-else>
-        No users found
-      </small>
-      <ol>
-        <li v-for="(item, index) in items">
-          <router-link
-            :to="{path: `/${item.login}/`}"
-            class="user">
-            <img :src="`${item.avatar_url}&s=80`" alt="item.name"/>
-            <h2>{{ item.login }}</h2>
-          </router-link>
-        </li>
-      </ol>
-      <paginate
-        v-if="total > perPage"
-        :page-count="pages"
-        :click-handler="handleClick"
-        :prev-text="'Prev'"
-        :next-text="'Next'">
-      </paginate>
-    </main>
+        <small v-if="getTotal">
+          Found {{ total === 1000 ? 'more than 1000' : total }} result{{ total > 1 ? 's' : ''}}
+        </small>
+        <small v-else>
+          No users found
+        </small>
+        <ol>
+          <li v-for="(item, index) in items">
+            <router-link
+              :to="{path: `/${item.login}/`}"
+              class="user">
+              <img :src="`${item.avatar_url}&s=80`" alt="item.name"/>
+              <h2>{{ item.login }}</h2>
+            </router-link>
+          </li>
+        </ol>
+        <paginate
+          v-if="total > perPage"
+          :page-count="pages"
+          :click-handler="handleClick"
+          :prev-text="'Prev'"
+          :next-text="'Next'">
+        </paginate>
+      </main>
+    </div>
   </div>
 </template>
 

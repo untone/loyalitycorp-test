@@ -33,7 +33,7 @@
       ])
     },
     created: function() {
-      const {params: {username, reponame}} = this.$route;
+      const {params: {ownername: username, reponame}} = this.$route;
       this.fetchRepo({
         username,
         reponame

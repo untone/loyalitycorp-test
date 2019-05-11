@@ -38,7 +38,7 @@
       </div>
       <ol v-if="filteredItems.length">
         <li v-for="item in filteredItems">
-          <router-link :to="{path: `/${item.owner.login}/${item.name}`}">
+          <router-link :to="{path: `/${username}/${item.owner.login}/${item.name}`}">
             <h2>
               {{ item.name }}
             </h2>
