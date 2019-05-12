@@ -20,7 +20,7 @@
   import VueMarkdown from 'vue-markdown';
   const {mapActions, mapGetters, mapMutations, mapState} = createNamespacedHelpers('repos');
 
-  module.exports = {
+  export default {
     components: {
       VueMarkdown
     },

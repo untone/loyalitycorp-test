@@ -78,7 +78,7 @@
 
   const {mapActions, mapGetters, mapMutations, mapState} = createNamespacedHelpers('repos');
 
-  module.exports = {
+  export default {
     components: {
       UsersSearch,
       RepoItem

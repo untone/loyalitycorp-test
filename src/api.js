@@ -1,8 +1,7 @@
 import parse from 'parse-link-header';
-import {access_token} from './token.json';
+import token from './token.json';
 
 const baseURL = 'https://api.github.com';
-const token = access_token || {};
 export const perPage = 10;
 
 const searchParams = params => 

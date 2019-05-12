@@ -1,9 +1,11 @@
 <template>
-  <routerView></routerView>
+  <routerView>
+  </routerView>
 </template>
 
 <script>
-  module.exports = {
-    name: 'Users'
+  export default {
+    name: 'Users',
+    props: ['username']
   };
 </script>

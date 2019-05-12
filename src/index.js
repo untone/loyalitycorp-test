@@ -1,4 +1,4 @@
-import 'babel-polyfill';
+import 'idempotent-babel-polyfill';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueMarkdown from 'vue-markdown';

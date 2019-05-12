@@ -26,8 +26,8 @@
           :prev-text="'Prev'"
           :next-text="'Next'">
         </paginate>
-      </main>
-    </div>
+      </div>
+    </main>
   </div>
 </template>
 
@@ -38,7 +38,7 @@
 
   const {mapGetters, mapState, mapActions} = createNamespacedHelpers('users');
 
-  module.exports = {
+  export default {
     components: {
       UsersSearch
     },

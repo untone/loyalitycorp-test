@@ -19,7 +19,7 @@
   import {createNamespacedHelpers} from 'vuex';
   const {mapState, mapActions} = createNamespacedHelpers('users');
 
-  module.exports = {
+  export default {
     created: function() {
       const {query: {username}} = this.$route;
       if (username !== undefined) {
