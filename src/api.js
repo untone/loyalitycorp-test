@@ -1,5 +1,4 @@
 import parse from 'parse-link-header';
-import token from './token.json';
 
 const baseURL = 'https://api.github.com';
 export const perPage = 10;
@@ -7,8 +6,12 @@ export const perPage = 10;
 const searchParams = params => 
   Object.keys(params).map(key => `${key}=${encodeURIComponent(params[key])}`).join('&');
 
+const token = {
+  'access_tooken': atob('ZDM2NmZhZTBjNjM2NGZmZjEzMzkwODMzNTlmMTk1OTZkZjcxMjE2Yg==')
+};
+
 const fetchHeaders = (endpoint, params = {}) => {
-  const url = `${baseURL}${endpoint}?${searchParams({...params, token})}`;
+  const url = `${baseURL}${endpoint}?${searchParams({...params, ...token})}`;
   return fetch(url)
     .then(response => {
       const {last: {page = 1} = {}} = parse(response.headers.get('Link')) || 1;
@@ -18,7 +21,7 @@ const fetchHeaders = (endpoint, params = {}) => {
 };
 
 const fetchData = (endpoint, params = {}) => {
-  const url = `${baseURL}${endpoint}?${searchParams({...params, token})}`;
+  const url = `${baseURL}${endpoint}?${searchParams({...params, ...token})}`;
   return fetch(url)
     .then(response => response.json())
     .catch(error => error.message);
