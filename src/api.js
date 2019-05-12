@@ -6,6 +6,7 @@ export const perPage = 10;
 const searchParams = params => 
   Object.keys(params).map(key => `${key}=${encodeURIComponent(params[key])}`).join('&');
 
+// Github invalidate tokens found in repo files so we encode it
 const token = {
   'access_tooken': atob('ZDM2NmZhZTBjNjM2NGZmZjEzMzkwODMzNTlmMTk1OTZkZjcxMjE2Yg==')
 };
