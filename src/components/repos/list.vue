@@ -133,7 +133,6 @@
       }
     },
     name: 'ReposList',
-    // props: ['username'],
     watch: {
       '$route.meta' ({showModal}) {
         this.showModal = showModal

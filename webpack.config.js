@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const fs  = require('fs');
+const autoprefixer = require('autoprefixer');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -62,7 +63,10 @@ module.exports = {
     rules: [
     {
       test: /\.vue$/,
-      loader: 'vue-loader'
+      loader: 'vue-loader',
+      options: {
+        postcss: [require('postcss-cssnext')()]
+      }
     },
     {
       test: /\.m?js$/,
@@ -77,10 +81,19 @@ module.exports = {
     {
       test: /\.css$/,
       use: [
-        isProduction
-          ? 'vue-style-loader'
-          : MiniCssExtractPlugin.loader,
-        'css-loader',
+        MiniCssExtractPlugin.loader,
+        { 
+          loader: 'css-loader', 
+          options: {
+            importLoaders: 1 
+          }
+        },
+        {
+          loader: 'postcss-loader',
+          options: {
+            ident: 'postcss'
+          }
+        },
       ],
     },
     ],
@@ -89,6 +102,7 @@ module.exports = {
     ? 
       [
         vueLoader,
+        cssPlugin,
         htmlPlugin,
         uglifyPlugin
       ]

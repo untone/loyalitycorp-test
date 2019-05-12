@@ -107,11 +107,9 @@
     top: 0;
     right: 0;
     left: 0;
-    margin: 0;
-    padding: 0;
-    height: 90px;
     margin: 0 auto;
     padding: 25px 0;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
