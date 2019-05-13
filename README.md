@@ -10,4 +10,4 @@ npm run build
 npm run serve
 ```
 
-Static site previe will be available at `http://localhost:8080`.
+Static site preview will be available at `http://localhost:8080`.
